@@ -2,125 +2,61 @@
 <html lang="el">
 <head>
     <meta charset="UTF-8">
-    <title>δεσμη 1</title>
+    <title>Ξ.Δ.Π. | Δέσμη 1</title>
     <style>
-        body {
-            margin: 0;
-            display: flex;
-            background-color: #fdfaf5;
-            font-family: "Comic Sans MS", cursive;
-            font-size: 16px;
-            color: #1b3022;
-        }
+        body { margin: 0; display: flex; background-color: #fdfaf5; font-family: "Comic Sans MS", cursive; color: #1b3022; }
+        nav { width: 220px; background-color: #3b8164; color: #ffffff; height: 100vh; position: fixed; padding: 20px; box-sizing: border-box; }
+        nav a { color: #ffffff; text-decoration: none; font-weight: bold; display: block; margin-bottom: 20px; border: 1px solid #ffffff; padding: 10px; text-align: center; border-radius: 5px; }
+        nav a:hover { background-color: #ffd700; color: #1b3022; }
+        
+        main { margin-left: 220px; padding: 30px; width: calc(100% - 220px); }
+        h2 { color: #3b8164; border-bottom: 2px solid #3b8164; }
 
-        /* Sidebar (σταθερό) */
-        nav {
-            width: 250px;
-            background-color: #326841; 
-            color: #ffffff;
-            height: 100vh;
-            position: fixed;
-            padding: 20px;
-            box-sizing: border-box;
-        }
+        .page-pair { display: flex; gap: 20px; margin-bottom: 40px; flex-wrap: wrap; }
+        .img-container { flex: 1; min-width: 350px; border: 3px solid #3b8164; background: white; }
+        .img-container img { width: 100%; display: block; }
+        .label { background: #3b8164; color: white; text-align: center; padding: 5px; font-weight: bold; }
 
-        nav a { color: white; text-decoration: none; display: block; margin-bottom: 10px; font-weight: bold; }
-        nav a:hover { text-decoration: underline; }
-
-        /* Κύριο Μέρος */
-        main {
-            margin-left: 250px;
-            padding: 40px;
-            width: 100%;
-        }
-
-        /* Διάταξη: Χειρόγραφο & Κείμενο δίπλα-δίπλα */
-        .comparison-container {
-            display: flex;
-            gap: 40px;
-            flex-wrap: wrap; /* Για να "σπάει" στα κινητά */
-            margin-top: 30px;
-        }
-
-        .handwritten-image {
-            flex: 1;
-            min-width: 350px;
-            border: 3px solid #326841;
-            box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .handwritten-image img {
-            width: 100%;
-            display: block;
-        }
-
-        .transcribed-text {
-            flex: 1;
-            min-width: 350px;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 2px 2px 10px rgba(0,0,0,0.05);
-            line-height: 1.8;
-            white-space: pre-line;
-            font-size: 16px;
-        }
-
-        .nav-buttons {
-            margin-top: 30px;
-            display: flex;
-            justify-content: space-between;
-        }
-
-        .btn {
-            background-color: #326841;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 50px; padding: 20px; border-top: 2px solid #3b8164; }
+        .btn { background-color: #3b8164; color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+        .btn:hover { background-color: #ffd700; color: #1b3022; }
+        .disabled { background-color: #ccc; pointer-events: none; }
     </style>
 </head>
 <body>
 
-<nav>
-    <a href="../index.html">Επιστροφή στην Αρχική</a>
-    <hr>
-    <div style="font-size: 14px; margin-top: 20px;">
-        <strong>Ξ.Δ.Π.</strong><br>
-    </div>
-</nav>
+<nav><a href="../index.html">⬅ ΕΠΙΣΤΡΟΦΗ</a></nav>
 
 <main>
-    <h1 style="color: #326841; border-bottom: 2px solid #326841; padding-bottom: 10px;">Μπα... θα φύγω...</h1>
-    
-    <div class="comparison-container">
-        <div class="handwritten-image">
-            <img src="s1.jpg" alt="Χειρόγραφο">
-        </div>
+    <h2>Δέσμη 1: Τίτλος Ποιήματος</h2>
 
-<div class="transcribed-text">
-Μπα... θα φύγω...
-Γιατί άραγε τα ενδιαφέροντά μου, το γράψιμο εν προκειμένω, να επηρεάζει τόσο πολύ @ τη ζωή μου;
-Ναι, θα φύγω.
-Δε μπορώ, όπως όλοι οι άλλοι, να γεμίσω τις μέρες μου με ασήμαντα, καθημερινά πράγματα.
-Δε μπορώ να μην τρώγομαι από την αγωνία, να είμαι ανέμελος @ ευτυχισμένος.
-Ώρες – ώρες νιώθω την ύπαρξή μου να ξεφεύγει πια από... τα χέρια μου @ από τη σκέψη μου @ να περνάει μέσα στα χαρτιά μου.
-Αλλά, πάλι, η επιβεβαίωση της ύπαρξής μου, η ύλη, για να επιβεβαιώνεται πρέπει να ανανεώνεται με την αγάπη, αλλιώς... είναι χαμένη ύλη.
-Όχι, δε θα πάψω να επικοινωνώ άμεσα με τους άλλους, δια ζώσης.
-Δε θα πάψω να ξέρω πως ν’ αγαπηθώ απ’ τους ανθρώπους.
-Δε θα πάψω να δίνω στους άλλους απ’ τον εαυτό μου.
-Δε θα πάψω να είμαι ένας κοινός άνθρωπος, αλλά θα προσπαθήσω κιόλας να γίνω Άνθρωπος...
-@ ας πονάω για όλα όσα βλέπω...
-@ ας ματώνω για να βγάλω από τα σωθικά μου αυτά που γράφω στα χαρτιά μου.
-Τελικά... σας την έσκασα, δεν πρόκειται να φύγω
-Θα είμ’ εδώ, για να σας φωνάξω δυνατά γεια σας – γεια σας ρέεε...
-</div>
+    <div class="page-pair">
+        <div class="img-container">
+            <div class="label">Χειρόγραφο - Σελίδα 1</div>
+            <img src="s1.jpg" alt="Χειρόγραφο 1">
+        </div>
+        <div class="img-container">
+            <div class="label">Καθαρογραμμένο (Word)</div>
+            <img src="ws1.jpg" alt="Word 1">
+        </div>
     </div>
+
+    <div class="page-pair">
+        <div class="img-container">
+            <div class="label">Χειρόγραφο - Σελίδα 2</div>
+            <img src="s2.jpg" alt="Χειρόγραφο 2">
+        </div>
+        <div class="img-container">
+            <div class="label">Καθαρογραμμένο (Word)</div>
+            <img src="ws2.jpg" alt="Word 2">
+        </div>
+    </div>
+
     <div class="nav-buttons">
-        <a href="#" class="btn">Προηγούμενο</a>
-        <a href="#" class="btn">Επόμενο</a>
+        <a href="../index.html" class="btn">« Πίσω στην Αρχική</a>
+        <a href="../f2/index.html" class="btn">Επόμενο: Δέσμη 2 »</a>
     </div>
 </main>
+
 </body>
 </html>
