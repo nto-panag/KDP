@@ -38,7 +38,7 @@
     </style>
 </head>
 <body>
-
+<audio id="flipSound" src="../flip.mp3" preload="auto"></audio>
 <nav>
     <a href="../index.html">⬅Αρχική</a>
     <a href="#" onclick="changePage(-currentPage); return false;" style="background-color: #2a5c45; border-color: #ffd700; color: #ffd700;">🏠 ΑΡΧΗ ΔΕΣΜΗΣ</a>
@@ -108,4 +108,5 @@
     document.addEventListener('keydown', function(e) { if (e.key === "ArrowRight") changePage(1); else if (e.key === "ArrowLeft") changePage(-1); });
 </script>
 </body>
+
 </html>
