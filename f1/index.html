@@ -88,15 +88,25 @@
         };
     }
 
-    function changePage(step) {
-        let newPage = currentPage + step;
-        if (newPage >= 0 && newPage <= totalPages) {
-            currentPage = newPage;
-            document.getElementById('handwrittenImg').src = 's' + currentPage + '.jpg';
-            document.getElementById('wordImg').src = 's' + currentPage + 'w.jpg';
-            updateUI();
+function changePage(step) {
+    let newPage = currentPage + step;
+    if (newPage >= 0 && newPage <= totalPages) {
+        currentPage = newPage;
+        
+        // Παίζουμε τον ήχο
+        const sound = document.getElementById('flipSound');
+        if (sound) {
+            sound.pause(); // Σταματάει αν έπαιζε ήδη
+            sound.currentTime = 0; // Γυρνάει στην αρχή
+            sound.play().catch(e => console.log("Ήχος: Χρειάζεται πρώτα ένα κλικ στη σελίδα"));
         }
+
+        // Αλλαγή εικόνων
+        document.getElementById('handwrittenImg').src = 's' + currentPage + '.jpg';
+        document.getElementById('wordImg').src = 's' + currentPage + 'w.jpg';
+        updateUI();
     }
+}
 
     function updateUI() {
         document.getElementById('pageCounter').innerText = 'Σελίδα ' + currentPage + ' / ' + totalPages;
@@ -110,3 +120,4 @@
 </body>
 
 </html>
+
